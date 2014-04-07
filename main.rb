@@ -22,11 +22,11 @@ main1='<html>
 
 	</body>
 </html>'
-main2="Проверка"
-main02="Testing Out"
-main=main1+main2+main3
-main01=main1+main02+main3
 
+bg_head = "Проверка"
+en_head = "Testing Out"
+bg_whole = main1 + bg_head + main3
+en_whole = main1 + en_head + main3
 
-File.write "C:\\Users\\Girls\\Documents\\GitHub\\blagovestka.github.io\\bg.html",main
-File.write "C:\\Users\\Girls\\Documents\\GitHub\\blagovestka.github.io\\en.html",main01
+File.write "C:\\Users\\Girls\\Documents\\GitHub\\blagovestka.github.io\\bg.html", bg_whole
+File.write "C:\\Users\\Girls\\Documents\\GitHub\\blagovestka.github.io\\en.html", en_whole
