@@ -3,7 +3,7 @@ home_page = '<!DOCTYPE html>
 <html>
 <head>
 	<title>Благи Странички</title>
-	<meta http-equiv="refresh" content="3; URL=bg/index.html">
+	<meta http-equiv="refresh" content="3; URL=bg/bg.html">
 	<meta name="keywords" content="automatic redirection">
 	<link rel="icon" type="image/png" href="images/favicon.png">
 </head>
@@ -11,7 +11,7 @@ home_page = '<!DOCTYPE html>
 <body style="text-aligh:center; 
 font-family:Comic Sans MS; 
 color:#DEDED9;
-background-image:url("images/background.jpg");
+background-image:url(\'images/background.jpg\');
 background-size:cover;
 background-repeat:REPEAT-SETTINGS;">
 
@@ -46,7 +46,7 @@ html_end_head = '</title>
 	<body style="text-aligh:center; 
 	font-family:Comic Sans MS; 
 	color:#DEDED9;
-	background-image:url("../images/background.jpg");
+	background-image:url(\'../images/background.jpg\');
 	background-size:cover;
 	background-repeat:REPEAT-SETTINGS;">
 
