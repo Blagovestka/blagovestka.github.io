@@ -1,8 +1,8 @@
 # encoding: UTF-8
-home_page_head = '<!DOCTYPE html>
+home_page_template = '<!DOCTYPE html>
 <html>
 <head>
-	<title>Благи Странички</title>
+	<title>%{title}</title> 
 	<meta http-equiv="refresh" content="3; URL=bg/index.html">
 	<meta name="keywords" content="automatic redirection">
 	<link rel="icon" type="image/png" href="images/favicon.png">
@@ -13,38 +13,22 @@ font-family:Comic Sans MS;
 color:#DEDED9;
 background-image:url(\'images/background.jpg\');
 background-size:cover;
-background-repeat:REPEAT-SETTINGS;">'
-
-home_page_text = '<h2>
-		Здравейте!
-	</h2><br>
-	<h2>
-		Hello!
-	</h2>
+background-repeat:REPEAT-SETTINGS;">
+	<h2>%{greeting}</h2><br>
 	<h5>
-		Ще бъдете прехвърлени към българската версия на сайта след няколко секунди.
+		%{text_redirect}
 	</h5>
 
 </body>
-</html>'
+</html>' 
+bg_translations = {title: "Благи Странички", greeting: "Здравейте!", text_redirect: "Ще бъдете прехвърлени към българската версия на сайта след няколко секунди." } 
+bg_home_page = home_page_template % bg_translations
+en_translations = {title: "Blagi Pages", greeting: "Hello!", text_redirect: "You will beredirected in a few seconds." }
+en_home_page = home_page_template % en_translations
 
-home_page = home_page_head + home_page_text
+File.write "C:\\Users\\Girls\\Documents\\GitHub\\blagovestka.github.io\\index.html", bg_home_page
 
-File.write "C:\\Users\\Girls\\Documents\\GitHub\\blagovestka.github.io\\index.html", home_page
 
-home_page_work = '<h2>
-    Здравейте!
-  </h2><br>
-  <h2>
-    Сайтът е все още се разработва!
-  </h2>
-  <h5>
-    Ще бъдете прехвърлени към българската версия на сайта след няколко секунди.
-  </h5>'
-
-home_page_demo = home_page_head + home_page_work
-
- File.write "C:\\Users\\Girls\\Documents\\GitHub\\blagovestka.github.io\\blog.html", home_page_demo
 html_head ='<!DOCTYPE html>
 <html>
 <head>
