@@ -5,7 +5,7 @@ y= a + name
 puts y
 puts "How old are you?"
 b="I am "
-age=gets+"years old."
+age=gets.chomp+" years old."
 x= b + age
 puts x
 puts "Where are you from?"
